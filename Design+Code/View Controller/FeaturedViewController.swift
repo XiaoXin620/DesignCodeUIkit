@@ -15,6 +15,7 @@ class FeaturedViewController: UIViewController {
     @IBOutlet var handbookCollectionView: UICollectionView!
     @IBOutlet var coursesTableView: UITableView!
     @IBOutlet var tableViewHeight: NSLayoutConstraint!
+    @IBOutlet var scrollView: UIScrollView!
     
     private var tokens: Set<AnyCancellable> = []
     
@@ -40,6 +41,10 @@ class FeaturedViewController: UIViewController {
                 self.tableViewHeight.constant = newContentSize.height
             }
             .store(in: &tokens)
+        
+        scrollView.delegate = self
+        
+        
     }
 }
 
@@ -122,4 +127,29 @@ extension FeaturedViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     
+}
+
+extension FeaturedViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        //内容高度
+        let contentHeight = scrollView.contentSize.height
+        
+        // Y轴滚动距离
+        let  lastScrollYPos = scrollView.contentOffset.y
+        
+        
+        //计算内容百分比
+        let percentage = lastScrollYPos / contentHeight
+        
+        if percentage < 0.15 {
+            self.title = "Featured"
+        } else if percentage <= 0.33 {
+            self.title = "Handbooks"
+        } else {
+            self.title = "Courses"
+        }
+        
+        
+    }
 }

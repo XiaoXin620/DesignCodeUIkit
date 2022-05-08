@@ -31,7 +31,7 @@
                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a5P-sk-5ea" customClass="CustomBlurView" customModule="Design_Code" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="370.5"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="JBS-Fa-Xqp">
-                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="370"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="370.5"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Illustration 2" translatesAutoresizingMaskIntoConstraints="NO" id="V69-iZ-eP8">
@@ -40,7 +40,7 @@
                                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J96-tf-8LR">
                                                             <rect key="frame" x="0.0" y="225" width="382" height="145.5"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OXq-NI-ZnH">
-                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="145"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="145.5"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SwiftUI for iOS 15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XX7-PX-fGI">
@@ -452,6 +452,7 @@
                         <outlet property="cardView" destination="ocN-1U-9kB" id="k6l-ia-wFe"/>
                         <outlet property="coursesTableView" destination="Ydx-Wg-LX3" id="PMW-u4-gYd"/>
                         <outlet property="handbookCollectionView" destination="Umd-f9-hGn" id="GIJ-Bv-IhE"/>
+                        <outlet property="scrollView" destination="FPo-v4-6EL" id="ewI-qx-Vu5"/>
                         <outlet property="tableViewHeight" destination="MIm-Mn-UAz" id="b5i-Nm-CVs"/>
                         <segue destination="SfA-uR-926" kind="presentation" identifier="presentCourse" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="5zx-oe-c9t"/>
                     </connections>
