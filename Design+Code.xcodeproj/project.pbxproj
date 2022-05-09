@@ -13,6 +13,7 @@
 		930B053328279122005CFB3F /* CoursesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930B053228279122005CFB3F /* CoursesTableViewCell.swift */; };
 		930B05352827AFF6005CFB3F /* CouresesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930B05342827AFF6005CFB3F /* CouresesViewController.swift */; };
 		930B05372829572A005CFB3F /* SectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930B05362829572A005CFB3F /* SectionTableViewCell.swift */; };
+		931B2FF928296E9300FB6C78 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931B2FF828296E9300FB6C78 /* CustomTabBarViewController.swift */; };
 		937D96BE281CF527001FC538 /* CustomBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937D96BA281CF527001FC538 /* CustomBlurView.swift */; };
 		937D96BF281CF527001FC538 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937D96BB281CF527001FC538 /* CustomUIView.swift */; };
 		937D96C0281CF527001FC538 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937D96BC281CF527001FC538 /* Font.swift */; };
@@ -32,6 +33,7 @@
 		930B053228279122005CFB3F /* CoursesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewCell.swift; sourceTree = "<group>"; };
 		930B05342827AFF6005CFB3F /* CouresesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouresesViewController.swift; sourceTree = "<group>"; };
 		930B05362829572A005CFB3F /* SectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewCell.swift; sourceTree = "<group>"; };
+		931B2FF828296E9300FB6C78 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
 		937D96B8281CEE82001FC538 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		937D96BA281CF527001FC538 /* CustomBlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBlurView.swift; sourceTree = "<group>"; };
 		937D96BB281CF527001FC538 /* CustomUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				937D96BB281CF527001FC538 /* CustomUIView.swift */,
 				937D96BC281CF527001FC538 /* Font.swift */,
 				937D96BD281CF527001FC538 /* CustomImageView.swift */,
+				931B2FF828296E9300FB6C78 /* CustomTabBarViewController.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				93D0F2BE281C5EDE0075C898 /* FeaturedViewController.swift in Sources */,
 				937D96BF281CF527001FC538 /* CustomUIView.swift in Sources */,
 				930B05372829572A005CFB3F /* SectionTableViewCell.swift in Sources */,
+				931B2FF928296E9300FB6C78 /* CustomTabBarViewController.swift in Sources */,
 				937D96C0281CF527001FC538 /* Font.swift in Sources */,
 				937D96C1281CF527001FC538 /* CustomImageView.swift in Sources */,
 				930B052E28257830005CFB3F /* Section.swift in Sources */,
