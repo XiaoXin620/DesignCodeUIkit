@@ -18,8 +18,8 @@ class CoursesViewController: UIViewController {
     @IBOutlet var authorLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var subtitleLabel: UILabel!
-//    @IBOutlet var iconImageView: CustomImageView!
-    
+    @IBOutlet var iconImageView: CustomImageView!
+    @IBOutlet var menuButton: UIButton!
     
     @IBOutlet var sectionsTableView: UITableView!
     @IBOutlet var tableViewHeight: NSLayoutConstraint!
@@ -31,8 +31,8 @@ class CoursesViewController: UIViewController {
         
         sectionsTableView.delegate = self
         sectionsTableView.dataSource = self
-        self.sectionsTableView.rowHeight = UITableView.automaticDimension
-        self.sectionsTableView.estimatedRowHeight = UITableView.automaticDimension
+//        self.sectionsTableView.rowHeight = UITableView.automaticDimension
+//        self.sectionsTableView.estimatedRowHeight = UITableView.automaticDimension
         
         
         sectionsTableView.publisher(for: \.contentSize)
@@ -43,7 +43,7 @@ class CoursesViewController: UIViewController {
         
         //为预览卡设置数据
         
-//        self.iconImageView.image = course?.courseIcon
+        self.iconImageView.image = course?.courseIcon
         self.bannerImage.image = course?.courseBanner
         self.backgroundImage.image = course?.courseBackground
         self.titleLabel.text = course?.courseTitle
@@ -51,7 +51,26 @@ class CoursesViewController: UIViewController {
         self.descriptionLabel.text = course?.courseDescription
         self.authorLabel.text = "Taught by \(course?.courseAuthor?.formatted(.list(type: .and, width: .standard)) ?? "Design+Code")"
         
-        
+        // 创建按钮
+        let menu = UIMenu(title: "Course Options",
+                          options: .displayInline,
+                          children: [
+                            UIAction(title: "Share", image: UIImage(systemName: "square.and.arrow.up"), handler: { _ in
+                                
+                            }),
+                            UIAction(title: "Take Test", image: UIImage(systemName: "highlighter"), handler: { _ in
+                                
+                            }),
+                            UIAction(title: "Download", image: UIImage(systemName: "square.and.arrow.down"), handler: { _ in
+                                
+                            }),
+                            UIAction(title: "Forums", image: UIImage(systemName: "chevron.left.forwardslash.chevron.right"), handler: { _ in
+                                
+                            })
+                            
+                          ])
+        menuButton.showsMenuAsPrimaryAction = true
+        menuButton.menu = menu
     }
 
     @IBAction func goBack(_ sender: Any) {
@@ -86,9 +105,9 @@ extension CoursesViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        //自动设置每行的高度
-        return UITableView.automaticDimension
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        //自动设置每行的高度
+//        return UITableView.automaticDimension
+//    }
     
 }
