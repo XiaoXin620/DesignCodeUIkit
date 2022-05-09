@@ -70,7 +70,7 @@ extension FeaturedViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let detailVC = segue.destination as? CouresesViewController, let course = sender as? Course {
+        if let detailVC = segue.destination as? CoursesViewController, let course = sender as? Course {
             detailVC.course = course
         }
     }
