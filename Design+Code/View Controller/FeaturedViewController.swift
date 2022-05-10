@@ -17,6 +17,12 @@ class FeaturedViewController: UIViewController {
     @IBOutlet var tableViewHeight: NSLayoutConstraint!
     @IBOutlet var scrollView: UIScrollView!
     
+    @IBOutlet var featuredTitleLabel: UILabel!
+    @IBOutlet var featuredSubtitleLabel: UILabel!
+    @IBOutlet var featuredDescLabel: UILabel!
+    @IBOutlet var handbooksLabel: UILabel!
+    @IBOutlet var coursesLabel: UILabel!
+    
     private var tokens: Set<AnyCancellable> = []
     
     
@@ -44,6 +50,27 @@ class FeaturedViewController: UIViewController {
         
         scrollView.delegate = self
         
+        
+        // Accessibility
+        featuredTitleLabel.maximumContentSizeCategory = .accessibilityExtraLarge
+        featuredTitleLabel.font = UIFont.preferredFont(for: .title1, weight: .bold)
+        featuredTitleLabel.adjustsFontForContentSizeCategory = true
+        
+        featuredSubtitleLabel.maximumContentSizeCategory = .accessibilityMedium
+        featuredSubtitleLabel.font = UIFont.preferredFont(for: .footnote, weight: .bold)
+        featuredSubtitleLabel.adjustsFontForContentSizeCategory = true
+        
+        featuredDescLabel.maximumContentSizeCategory = .accessibilityMedium
+        featuredDescLabel.font = UIFont.preferredFont(for: .footnote, weight: .regular)
+        featuredDescLabel.adjustsFontForContentSizeCategory = true
+        
+        handbooksLabel.maximumContentSizeCategory = .accessibilityMedium
+        handbooksLabel.font = UIFont.preferredFont(for: .footnote, weight: .semibold)
+        handbooksLabel.adjustsFontForContentSizeCategory = true
+        
+        coursesLabel.maximumContentSizeCategory = .accessibilityMedium
+        coursesLabel.font = UIFont.preferredFont(for: .footnote, weight: .semibold)
+        coursesLabel.adjustsFontForContentSizeCategory = true
         
     }
 }

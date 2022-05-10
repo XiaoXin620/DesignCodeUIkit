@@ -28,6 +28,16 @@ class SectionsCollectionViewCell: UICollectionViewCell {
         layer.cornerRadius = 30
         layer.cornerCurve = .continuous
         
+        
+        // Accessibility
+        titleLabel.adjustsFontForContentSizeCategory = true
+        titleLabel.maximumContentSizeCategory = .extraExtraLarge
+        titleLabel.font = UIFont.preferredFont(for: .body, weight: .bold)
+        
+        subtitleLabel.adjustsFontForContentSizeCategory = true
+        subtitleLabel.maximumContentSizeCategory = .extraLarge
+        subtitleLabel.font = UIFont.preferredFont(for: .caption1, weight: .regular)
+        
     }
     
     

@@ -26,6 +26,20 @@ class CoursesTableViewCell: UITableViewCell {
         layer.masksToBounds = false
         layer.cornerRadius = 30
         layer.cornerCurve = .continuous
+        
+        
+        // Accessibility
+        titleLabel.adjustsFontForContentSizeCategory = true
+        titleLabel.maximumContentSizeCategory = .extraExtraLarge
+        titleLabel.font = UIFont.preferredFont(for: .title1, weight: .bold)
+        
+        subtitleLabel.adjustsFontForContentSizeCategory = true
+        subtitleLabel.maximumContentSizeCategory = .extraLarge
+        subtitleLabel.font = UIFont.preferredFont(for: .footnote, weight: .semibold)
+        
+        descriptionLabel.adjustsFontForContentSizeCategory = true
+        descriptionLabel.maximumContentSizeCategory = .extraLarge
+        descriptionLabel.font = UIFont.preferredFont(for: .footnote, weight: .regular)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
